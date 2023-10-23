@@ -8,20 +8,20 @@ class Techvault < Formula
     on_macos do
         if Hardware::CPU.intel?
           url "https://github.com/moabukar/tech-vault-cli/releases/download/v0.1.0/tech-vault-cli_0.1.0_darwin_amd64.tar.gz"
-          sha256 "f682637747e8db579ba9d07f2d3cd9066bf6b8a7b53071e3aaaf1d60aeee9887"
+          sha256 "95d170e99eb65e1475aeb088d2f6f58d3d8acea50098132c6318d83fb2253ef5"
     
           def install
             bin.install "techvault"
           end
         end
-        # if Hardware::CPU.arm?
-        #   url "https://github.com/moabukar/tech-vault-cli/releases/download/v0.1.0/tech-vault-cli_0.1.0_darwin_amd64.tar.gz"
-        #   sha256 "9444b0a267c3c04775563159ddfffb7d4bae2d71427c6c8c0d14b30b65e059a4"
+        if Hardware::CPU.arm?
+          url "https://github.com/moabukar/tech-vault-cli/releases/download/v0.1.0/tech-vault-cli_0.1.0_darwin_amd64.tar.gz"
+          sha256 "95d170e99eb65e1475aeb088d2f6f58d3d8acea50098132c6318d83fb2253ef5"
     
-        #   def install
-        #     bin.install "techvault"
-        #   end
-        # end
+          def install
+            bin.install "techvault"
+          end
+        end
       end
       on_linux do
         # if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
