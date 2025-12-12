@@ -7,25 +7,25 @@ class CodercoGrader < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/moabukar/coderco-grader/releases/download/v3.0.0/coderco-grader_3.0.0_darwin_arm64.tar.gz"
-      sha256 "9e54002032e38b4cddf04de9d84341e9808f530ebea469532556a70f4394dfba"
+      sha256 "83c502ce9d19f9e9b3c81ae2b46cdcaef64e0f4cd545e26b156d855662512e8e"
     else
       url "https://github.com/moabukar/coderco-grader/releases/download/v3.0.0/coderco-grader_3.0.0_darwin_amd64.tar.gz"
-      sha256 "73fbf6ef5cf401c847190921e557b8378dc6dfa67b1cd920c5ada8d6da75fc30"
+      sha256 "58ce7144a103aac6b51a3476600127c4618bc81540fe49049ec0dd7b7f1d1714"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/moabukar/coderco-grader/releases/download/v3.0.0/coderco-grader_3.0.0_linux_arm64.tar.gz"
-      sha256 "a28d8a0d0de2be89f24f54705dd62f605d02609866d3e62ad56ae33af8db92d7"
+      sha256 "63e180dcecb319d5f044fa6d1309a5dba2d9ceb62e26fb984e17f6fd2051560e"
     else
       url "https://github.com/moabukar/coderco-grader/releases/download/v3.0.0/coderco-grader_3.0.0_linux_amd64.tar.gz"
-      sha256 "e16108d18c54d16bb99e3e7ac249d294df9b2658bba25bd6c6aba9395f971156"
+      sha256 "018f814a5e5fc01122dd17873dd3ab158c399492bb3084aec6725e7989d6a5fe"
     end
   end
 
   def install
-    bin.install Dir["coderco-grader-*"].first => "coderco-grader"
+    bin.install Dir["coderco-grader*"].first => "coderco-grader"
   end
 
   test do
