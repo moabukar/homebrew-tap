@@ -1,7 +1,7 @@
 class CodercoGrader < Formula
   desc "Automated assessment tool for DevOps projects (ECS & EKS)"
   homepage "https://github.com/moabukar/coderco-grader"
-  version "2.0.0"
+  version "3.0.0"
   license "MIT"
 
   on_macos do
