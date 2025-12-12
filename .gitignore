@@ -1,0 +1,11 @@
+.env
+.DS_Store
+
+## Ruby
+.ruby-version
+.ruby-gemset
+.bundle
+.bundle/config
+.bundle/gems
+.bundle/gems/*
+.bundle/gems/cache
