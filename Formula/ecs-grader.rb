@@ -1,28 +1,34 @@
-class EcsGrader < Formula
-    desc "CLI tool to automatically assess ECS deployment projects"
-    homepage "https://github.com/moabukar/ecs-grader"
-    version "1.1.0"
-    
-    on_macos do
-      if Hardware::CPU.arm?
-        url "https://github.com/moabukar/ecs-grader/releases/download/v1.1.0/ecs-grader-darwin-arm64.tar.gz"
-        sha256 "REPLACE_WITH_ARM64_SHA256"
-      else
-        url "https://github.com/moabukar/ecs-grader/releases/download/v1.1.0/ecs-grader-darwin-amd64.tar.gz"
-        sha256 "REPLACE_WITH_AMD64_SHA256"
-      end
-    end
-  
-    on_linux do
-      url "https://github.com/moabukar/ecs-grader/releases/download/v1.1.0/ecs-grader-linux-amd64.tar.gz"
-      sha256 "REPLACE_WITH_LINUX_SHA256"
-    end
-  
-    def install
-      bin.install "ecs-grader"
-    end
-  
-    test do
-      assert_match "ECS Project Grading Tool", shell_output("#{bin}/ecs-grader --help")
+class CodercoGrader < Formula
+  desc "Automated assessment tool for DevOps projects (ECS & EKS)"
+  homepage "https://github.com/moabukar/coderco-grader"
+  version "2.0.0"
+  license "MIT"
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/moabukar/coderco-grader/releases/download/v#{version}/coderco-grader_#{version}_darwin_arm64.tar.gz"
+      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_DARWIN_ARM64"
+    else
+      url "https://github.com/moabukar/coderco-grader/releases/download/v#{version}/coderco-grader_#{version}_darwin_amd64.tar.gz"
+      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_DARWIN_AMD64"
     end
   end
+
+  on_linux do
+    if Hardware::CPU.arm?
+      url "https://github.com/moabukar/coderco-grader/releases/download/v#{version}/coderco-grader_#{version}_linux_arm64.tar.gz"
+      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_LINUX_ARM64"
+    else
+      url "https://github.com/moabukar/coderco-grader/releases/download/v#{version}/coderco-grader_#{version}_linux_amd64.tar.gz"
+      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_LINUX_AMD64"
+    end
+  end
+
+  def install
+    bin.install "coderco-grader"
+  end
+
+  test do
+    assert_match "CoderCo Project Grader", shell_output("#{bin}/coderco-grader --help")
+  end
+end
