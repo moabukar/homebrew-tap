@@ -7,20 +7,20 @@ class CvReviewer < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/moabukar/cv-reviewer/releases/download/v0.1.0/cv-reviewer_0.1.0_darwin_arm64.tar.gz"
-      sha256 "cf2a5fac01f04fbe523ca7ee84cef9c1fdb047bf0483986796610c89ba9014f7"
+      sha256 "9384ab3b1ae718090ab392492b842146dc9f9d45ed232a3bf287466d7c7adbf8"
     else
       url "https://github.com/moabukar/cv-reviewer/releases/download/v0.1.0/cv-reviewer_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3f4af709bed184f6fc92c889042f73dcdff0c28e75e78dee0b0a2f5d8b66b523"
+      sha256 "2c5fea9045e7a43353b62789bf08c0ccfb87f44f5aac5aea4d946a29a47f916b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/moabukar/cv-reviewer/releases/download/v0.1.0/cv-reviewer_0.1.0_linux_arm64.tar.gz"
-      sha256 "af8759f65c3bb952a86336fe06b362ba4cc269b6019dfcf39894eae9278bcc5a"
+      sha256 "10f279a44201846bebf46b97e84d82c36b12a1ec26b713c9d9dad7875ff4bee5"
     else
       url "https://github.com/moabukar/cv-reviewer/releases/download/v0.1.0/cv-reviewer_0.1.0_linux_amd64.tar.gz"
-      sha256 "ee931b8636965d460f4845c7ce9896d2bab3bcff03c5e2113fd224f4cc158f69"
+      sha256 "ef1a5a6104acd1bbfa95bc539efc2fd25d3a39eacf6b9c5e9ec51ced4af5066e"
     end
   end
 
