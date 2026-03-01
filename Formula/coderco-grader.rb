@@ -1,26 +1,26 @@
 class CodercoGrader < Formula
   desc "Automated assessment tool for DevOps projects (ECS & EKS)"
   homepage "https://github.com/moabukar/coderco-grader"
-  version "4.0.0"
+  version "4.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/moabukar/coderco-grader/releases/download/v4.0.0/coderco-grader_4.0.0_darwin_arm64.tar.gz"
-      sha256 "e6c627645062b1f19ae16b44d8b2c4e10e73fd2fafc2e0f40499f14c365bbf7a"
+      url "https://github.com/moabukar/coderco-grader/releases/download/v4.1.0/coderco-grader_4.1.0_darwin_arm64.tar.gz"
+      sha256 "44c67d3c7924dcec0f3cb1b3a156cd3c4e8719f756086b3e41759d3dfa8b4cac"
     else
-      url "https://github.com/moabukar/coderco-grader/releases/download/v4.0.0/coderco-grader_4.0.0_darwin_amd64.tar.gz"
-      sha256 "4233dc4e3b505a914a40f72a6d2600a998b1a583c83ec5f14268c9adbed45f76"
+      url "https://github.com/moabukar/coderco-grader/releases/download/v4.1.0/coderco-grader_4.1.0_darwin_amd64.tar.gz"
+      sha256 "41795e68ecbb32b695a67735dadd3404fe5d7dd9c05bf22933e60017ceb89138"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/moabukar/coderco-grader/releases/download/v4.0.0/coderco-grader_4.0.0_linux_arm64.tar.gz"
-      sha256 "3737e6e822c4be73089b4b980b78e13d5124b9da82962a403dcd9e8c8ba2fc0b"
+      url "https://github.com/moabukar/coderco-grader/releases/download/v4.1.0/coderco-grader_4.1.0_linux_arm64.tar.gz"
+      sha256 "3959152270c6b7094d2246afa3ee7a7791e65aeda2fce331e4b10a6e68f8468a"
     else
-      url "https://github.com/moabukar/coderco-grader/releases/download/v4.0.0/coderco-grader_4.0.0_linux_amd64.tar.gz"
-      sha256 "0238bcce481c82f4452de535fa43e214311841d3635b29e51dd5ae5964f670f5"
+      url "https://github.com/moabukar/coderco-grader/releases/download/v4.1.0/coderco-grader_4.1.0_linux_amd64.tar.gz"
+      sha256 "2e8a811eb8934d4c97e6adbbce2df7701f71d44d35cea337c422679e42771a97"
     end
   end
 
