@@ -1,14 +1,33 @@
-# Homebrew Taps
+# Homebrew Tap
 
-## How do I install these formulae?
+Homebrew formulae for Mo's CLI tools.
 
-example:
+## Install
 
-`brew install moabukar/techvault/<formula>`
-`brew install moabukar/coderco-grader/<formula>`
+```bash
+brew tap moabukar/tap
+```
 
-Or `brew tap moabukar/techvault` and then `brew install <formula>`.
+## Tools
 
-## Documentation
+| Formula | Description | Install |
+|---------|-------------|---------|
+| **coderco-grader** | Automated DevOps project grader (ECS & EKS) | `brew install moabukar/tap/coderco-grader` |
+| **mockops** | Interactive DevOps interview prep CLI | `brew install moabukar/tap/mockops` |
+| **cia** | Container image analyser and vulnerability scanner | `brew install moabukar/tap/cia` |
+| **cv-reviewer** | Config-driven CV/resume reviewer for DevOps engineers | `brew install moabukar/tap/cv-reviewer` |
+| **techvault** | CLI for the Tech Vault knowledge base | `brew install moabukar/tap/techvault` |
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+## Upgrade
+
+```bash
+brew update
+brew upgrade moabukar/tap/<formula>
+```
+
+## Uninstall
+
+```bash
+brew uninstall <formula>
+brew untap moabukar/tap
+```
