@@ -4,7 +4,7 @@ class Mockops < Formula
   desc "Interactive CLI tool for practicing DevOps interview questions"
   homepage "https://github.com/moabukar/mockops"
   url "https://github.com/moabukar/mockops/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 ""
+  sha256 "d776241506356b36d44522fa43a1b5a760eca98be2af8c1a8c450a40b1e93bdd"
   license "MIT"
 
   depends_on "python@3.11"
