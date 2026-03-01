@@ -1,10 +1,10 @@
-class DevopsInterviewPrep < Formula
+class Mockops < Formula
   include Language::Python::Virtualenv
 
   desc "Interactive CLI tool for practicing DevOps interview questions"
-  homepage "https://github.com/moabukar/devops-interview-prep"
-  url "https://github.com/moabukar/devops-interview-prep/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "b228056c3b899f8cbcfb0fc706c01e59a119ba10431d66042e3a4901cd655910"
+  homepage "https://github.com/moabukar/mockops"
+  url "https://github.com/moabukar/mockops/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 ""
   license "MIT"
 
   depends_on "python@3.11"
@@ -23,10 +23,10 @@ class DevopsInterviewPrep < Formula
     virtualenv_install_with_resources
 
     # Copy question data into the share directory
-    (share/"devops-interview-prep").install "data"
+    (share/"mockops").install "data"
   end
 
   test do
-    assert_match "interview", shell_output("#{bin}/devops-ip --help")
+    assert_match "interview", shell_output("#{bin}/mockops --help")
   end
 end
