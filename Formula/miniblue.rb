@@ -1,7 +1,7 @@
 class Miniblue < Formula
   desc "Local Azure development. One binary. No account needed."
   homepage "https://github.com/moabukar/miniblue"
-  url "https://github.com/moabukar/miniblue.git", tag: "v0.2.0"
+  url "https://github.com/moabukar/miniblue.git", tag: "v0.2.1"
   license "MIT"
 
   depends_on "go" => :build
