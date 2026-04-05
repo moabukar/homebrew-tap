@@ -12,6 +12,7 @@ brew tap moabukar/tap
 
 | Formula | Description | Install |
 |---------|-------------|---------|
+| **miniblue** | Local Azure emulator - 19 services, one binary | `brew install moabukar/tap/miniblue` |
 | **coderco-grader** | Automated DevOps project grader (ECS & EKS) | `brew install moabukar/tap/coderco-grader` |
 | **mockops** | Interactive DevOps interview prep CLI | `brew install moabukar/tap/mockops` |
 | **cia** | Container image analyser and vulnerability scanner | `brew install moabukar/tap/cia` |
