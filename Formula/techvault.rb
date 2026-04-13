@@ -5,13 +5,8 @@ class Techvault < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/moabukar/tech-vault-cli/releases/download/v0.1.0/tech-vault-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f682637747e8db579ba9d07f2d3cd9066bf6b8a7b53071e3aaaf1d60aeee9887"
-    else
-      url "https://github.com/moabukar/tech-vault-cli/releases/download/v0.1.0/tech-vault-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f682637747e8db579ba9d07f2d3cd9066bf6b8a7b53071e3aaaf1d60aeee9887"
-    end
+    url "https://github.com/moabukar/tech-vault-cli/releases/download/v0.1.0/tech-vault-cli_0.1.0_darwin_amd64.tar.gz"
+    sha256 "f682637747e8db579ba9d07f2d3cd9066bf6b8a7b53071e3aaaf1d60aeee9887"
   end
 
   on_linux do

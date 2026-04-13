@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class Cia < Formula
-  desc "CLI tool for analyzing container images, scanning vulnerabilities, and outputting reports"
+  desc "Container image analyser and vulnerability scanner"
   homepage "https://github.com/moabukar/cia"
   version "0.2.2"
   license "MIT"

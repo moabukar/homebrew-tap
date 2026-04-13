@@ -4,6 +4,8 @@ class CvReviewer < Formula
   version "0.1.0"
   license "MIT"
 
+  depends_on "poppler" => :recommended
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/moabukar/cv-reviewer/releases/download/v0.1.0/cv-reviewer_0.1.0_darwin_arm64.tar.gz"
@@ -23,8 +25,6 @@ class CvReviewer < Formula
       sha256 "9855dc9bc33e06e99e56766d31e5572896cdc83b22fc6d808488fd7f98d8e0ed"
     end
   end
-
-  depends_on "poppler" => :recommended
 
   def install
     bin.install Dir["cv-reviewer-*"].first => "cv-reviewer"
