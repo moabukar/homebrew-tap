@@ -9,8 +9,9 @@ class Miniblue < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "-o", bin/"miniblue", "./cmd/miniblue"
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "-o", bin/"azlocal", "./cmd/azlocal"
+    ldflags = "-s -w -X github.com/moabukar/miniblue/internal/server.Version=#{version}"
+    system "go", "build", *std_go_args(ldflags: ldflags), "-o", bin/"miniblue", "./cmd/miniblue"
+    system "go", "build", *std_go_args(ldflags: ldflags), "-o", bin/"azlocal", "./cmd/azlocal"
   end
 
   test do
