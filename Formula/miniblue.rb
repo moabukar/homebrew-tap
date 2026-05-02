@@ -1,8 +1,8 @@
 class Miniblue < Formula
   desc "Local Azure emulator. 26 services, one binary, no account needed"
   homepage "https://github.com/moabukar/miniblue"
-  url "https://github.com/moabukar/miniblue/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "470cb96183e36fbdf4d9a219dc41d82a9dfa3653675e0809fe2a46eba2f5e444"
+  url "https://github.com/moabukar/miniblue/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "b033d312ab185ab6f4d9070e0bb515e0a34573820462ae37f05b242db03b2e20"
   license "MIT"
   head "https://github.com/moabukar/miniblue.git", branch: "main"
 
